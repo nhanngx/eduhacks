@@ -9,6 +9,16 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayer.Provider;
+import com.google.android.youtube.player.YouTubePlayerView;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
