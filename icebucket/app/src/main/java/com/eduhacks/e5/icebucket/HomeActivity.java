@@ -15,6 +15,7 @@ import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.ImageButton;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -22,6 +23,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        ImageButton btn = (ImageButton)findViewById(R.id.imageButton);
+        btn.setBackground(null);
 
         FloatingActionButton userprofile = (FloatingActionButton) findViewById(R.id.UserProfile);
         userprofile.setOnClickListener(new View.OnClickListener() {
@@ -41,17 +44,5 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    public class OnSwipeTouchListener implements OnTouchListener {
-
-        private final GestureDetector gestureDetector;
-
-        public OnSwipeTouchListener (Context ctx){
-            gestureDetector = new GestureDetector(ctx, new GestureListener());
-        }
-
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-            return gestureDetector.onTouchEvent(event);
-        }
 
 }
