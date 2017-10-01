@@ -4,8 +4,14 @@
     <item
         android:id="@+id/action_settings"
         android:checkable="false"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Heart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/random_button"
+        android:checkable="false"
         android:icon="@android:drawable/ic_input_add"
-        android:title="new game"
+        android:title="Random Button"
         app:showAsAction="always"/>
 
 
